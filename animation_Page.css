@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+    user-select: none;
+}
+html,body{
+    width: 100;;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #e485b7;
+}
+
+#mtext{
+    
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    z-index: 9999;
+}
+#mtext h1{
+    user-select: none;
+    white-space: nowrap;
+    font-family:cursive;
+    font-size: 9vw;
+    font-weight: 100;
+    line-height: 1;
+}
+#mtext h3{
+    user-select: none;
+    white-space: nowrap;
+    font-family:cursive;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 1;
+}
+/* Left */
+#left{
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(134, 96, 115);
+}
+
+#centreimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 50%;
+    background-image: url("https://images.unsplash.com/photo-1578979879663-4ba6a968a50a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+#centreimg #text{
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    height: 50px;
+    bottom: -30%;
+    position: absolute;
+}
+
+#text #parts{
+    width: 30%;
+    color: #fff;
+    
+}
+#parts h5{
+    padding-bottom: 20px;
+    font-weight: 600;
+
+}
+#text #para{
+    width: 70%;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 15px;
+
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 50px 60px;
+    gap: 100px;
+}
+#nav h3{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+#nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    /* font-family: "montserrat"; */
+    font-family:cursive;
+    font-weight: 600;
+}
+
+#scroll{
+    position: absolute;
+    bottom: -10px;
+    align-items: center;
+    display: flex;
+    /* justify-content: start; */
+    gap: 5px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+    left: 10%;
+    
+}
+#scroll #line{
+    
+    width: 150px;
+    height: 2px;
+    background-color: #fff;
+}
+#scroll h4{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #fff;
+
+}
+
+/* centre */
+#centre{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-image: url("");
+    background-image: url("https://images.unsplash.com/photo-1445098693232-134135a7ccfa?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#centre #card{
+    display: flex;
+    position: absolute;
+    width: 230px;
+    height: 160px;
+    background-color: red;
+    right: -5%;
+    bottom: 10%;
+    z-index: 9999;
+}
+#card #icons{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 50px; */
+}
+#card #cardimg{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1723754165609-fa2d26338ab4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* right */
+
+#right{
+    width: 10%;
+    height: 100%;
+    background-color: rgb(134, 96, 115);
+
+}
+#relem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    color: #fff;
+    
+}
+#rlinks{
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    gap: 20px;
+    transform: rotate(90deg);
+}
+#rlinks a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+
